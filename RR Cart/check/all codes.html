@@ -1,0 +1,144 @@
+
+
+//Remove product from cart.
+
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript">
+bk_use_multiple_iframes = true;
+bk_allow_multiple_calls = true;
+bk_addPageCtx('Aid', '10976');
+bk_addPageCtx('Etype', 'CART');
+bk_addPageCtx('Action', 'REMOVE');
+bk_addPageCtx('Pid', '<Product ID>');
+bk_addPageCtx('Utype', 'C');
+bk_addPageCtx('Id', '<Customer ID>');
+bk_doJSTag(62160, 1);
+BKTAG._reset();
+</script>
+
+
+//Clear the while cart
+
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript">
+bk_use_multiple_iframes = true;
+bk_allow_multiple_calls = true;
+bk_addPageCtx('Aid', '10976');
+bk_addPageCtx('Etype', 'CART');
+bk_addPageCtx('Action', 'CLEAR');
+bk_addPageCtx('Utype', 'C');
+bk_addPageCtx('Id', '<Customer ID>');
+bk_doJSTag(62160, 1);
+BKTAG._reset();
+</script>
+
+
+
+//update stage
+
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript">
+bk_use_multiple_iframes = true;
+bk_allow_multiple_calls = true;
+bk_addPageCtx('Aid', '10976');
+bk_addPageCtx('Etype', 'CART');
+bk_addPageCtx('Action', 'UPDATE');
+bk_addPageCtx('Stage', '<Stage>'); //stage like checkout button click, Purchase button click etc.
+bk_addPageCtx('Utype', 'C');
+bk_addPageCtx('Id', '<Customer ID>');
+bk_doJSTag(62160, 1);
+BKTAG._reset();
+</script>
+
+//Purchase fired once the user clicks on purchase button.
+
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript">
+bk_use_multiple_iframes = true;
+bk_allow_multiple_calls = true;
+bk_addPageCtx('Aid', '10976');
+bk_addPageCtx('Etype', 'CART');
+bk_addPageCtx('Action', 'PURCHASE');
+bk_addPageCtx('Pid', '<Product ID>');
+bk_addPageCtx('Utype', 'C');
+bk_addPageCtx('Id', '<Customer ID>');
+bk_doJSTag(62160, 1);
+BKTAG._reset();
+</script>
+
+//browse abandoned
+
+<!-- Begin Rapid Retargeter Tag -->
+<script type="text/javascript">
+    window.bk_async = function () {
+        bk_use_multiple_iframes = true;
+        bk_allow_multiple_calls = true;
+        bk_addPageCtx('Aid', '10976');
+        bk_addPageCtx('Etype', 'BROWSE');
+        bk_addPageCtx('Pid', '<Product ID>');
+        bk_addPageCtx('Utype', 'C');
+        bk_addPageCtx('Id', '<Customer ID>');
+        BKTAG.doTag(62160, 1);
+        BKTAG._reset();
+        };
+(function() {
+var scripts = document.getElementsByTagName('script')[0]; var s = document.createElement('script');
+            s.async = true;
+            s.src = "https://tags.bkrtx.com/js/bk-coretag.js"; scripts.parentNode.insertBefore(s, scripts);
+            }());
+</script>
+<!-- End Rapid Retargeter Tag -->
+
+
+//Purchase abandoned
+
+
+<!-- Begin Rapid Retargeter Tag -->
+<script type="text/javascript">
+    window.bk_async = function () {
+        bk_use_multiple_iframes = true;
+        bk_allow_multiple_calls = true;
+        bk_addPageCtx('Aid', '10976');
+        bk_addPageCtx('Etype', 'CART');
+        bk_addPageCtx('Action', 'PURCHASE');
+        bk_addPageCtx('Pid', '<Product ID>');
+        bk_addPageCtx('Utype', 'C');
+        bk_addPageCtx('Id', '<Customer ID>');
+        BKTAG.doTag(62160, 1);
+        BKTAG._reset();
+        };
+    (function() {
+    var scripts = document.getElementsByTagName('script')[0];
+    var s = document.createElement('script');
+            s.async = true;
+            s.src = "https://tags.bkrtx.com/js/bk-coretag.js";
+            scripts.parentNode.insertBefore(s, scripts);
+            }());
+</script>
+<!-- End Rapid Retargeter Tag -->
+
+
+//Search abandon
+
+<!-- Begin Rapid Retargeter Tag -->
+<script type="text/javascript">
+    window.bk_async = function() {
+        bk_use_multiple_iframes = true;
+        bk_allow_multiple_calls = true;
+        bk_addPageCtx('Aid', '10976');
+        bk_addPageCtx('Etype', 'SEARCH');
+        bk_addPageCtx('Searchterm', '<Search Term>');
+        bk_addPageCtx('Utype', 'C');
+    bk_addPageCtx('Id', '<Customer ID>');
+    BKTAG.doTag(62160, 1);
+    BKTAG._reset();
+    };
+    (function() {
+    var scripts = document.getElementsByTagName('script')[0];
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = "http://tags.bkrtx.com/js/bk-coretag.js";
+    scripts.parentNode.insertBefore(s, scripts);
+    }());
+    </script>
+    <!-- End Rapid Retargeter Tag -->

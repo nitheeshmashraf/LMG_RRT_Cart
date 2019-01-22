@@ -1,0 +1,31 @@
+<!-- Begin Desktop CoreTag -->
+<html>
+<head>
+<title>Sample sending Email/Phone hash in Core Tag for Private oHash Pool</title> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script> 
+</head>
+<body>
+<h1>Using the BlueKai CoreTag in a Form to ID Swap Users into a Private oHash Pool<h1> <h2>Enter email address and/or phone number in the form</h2>
+<form id="sampleForm">
+<p>E-mail Address: <input type="email" name="email"></p>
+<p>Phone Number: <input type="text" name="phone"></p>
+<input type="submit" name="action" value="Send">
+</form>
+<p><b>Note:</b> type="email" is not supported in Internet Explorer 9 and earlier versions.</p>
+<script type="text/javascript">
+$(function() {
+$("#sampleForm" ).submit(function(event) { event.preventDefault();
+var email = $('#sampleForm input[name="email"]').val(); var phone = $('#sampleForm input[name="phone"]').val(); if (email || phone) {
+BKTAG.util.normalizeEmail(email); BKTAG.util.normalizeEmail(phone);
+bk_addPageCtx(id, <Customer ID>);
+//pass your site ID and the pixel limit: 
+bk_doJSTag(62158, 1);
+} else {
+alert('Please enter a valid email and/or phone'); }
+});
+});
+</script>
+</body>
+</html>
+<!-- End Desktop CoreTag -->
